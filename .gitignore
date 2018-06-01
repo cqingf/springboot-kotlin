@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+admin/src/main/main.iml
+admin/src/test/test.iml
+common/src/main/main1.iml
+lib/
+admin/admin.iml
+cc-framework-kotlin.iml
+admin/target/
+common/target/
