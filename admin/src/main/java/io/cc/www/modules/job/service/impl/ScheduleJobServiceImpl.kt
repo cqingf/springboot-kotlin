@@ -62,7 +62,7 @@ open class ScheduleJobServiceImpl : ServiceImpl<ScheduleJobDao, ScheduleJobEntit
 
     @Transactional(rollbackFor = arrayOf(Exception::class))
     override fun update(scheduleJob: ScheduleJobEntity) {
-        ScheduleUtils.updateScheduleJob(scheduler, scheduleJob)
+        ScheduleUtils.updateScheduleJob(scheduler!!, scheduleJob)
 
         this.updateById(scheduleJob)
     }

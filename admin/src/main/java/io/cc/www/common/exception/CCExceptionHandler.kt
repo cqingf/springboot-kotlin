@@ -18,7 +18,7 @@ class CCExceptionHandler {
     fun handleRRException(e: RRException): R {
         val r = R()
         r["code"] = e.code
-        r["msg"] = e.message
+        r["msg"] = e.message!!
 
         return r
     }

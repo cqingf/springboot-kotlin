@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@MapperScan(basePackages = arrayOf("io.cc.www.modules.*.dao"))
+@MapperScan(basePackages = ["io.cc.www.modules.*.dao"])
 open class AdminApplication
 
 fun main(args: Array<String>) {

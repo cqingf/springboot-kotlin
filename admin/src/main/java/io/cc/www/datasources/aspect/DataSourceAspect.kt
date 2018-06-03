@@ -30,10 +30,10 @@ class DataSourceAspect : Ordered {
 
         val ds = method.getAnnotation(DataSource::class.java)
         if (ds == null) {
-            DynamicDataSource.setDataSource(DataSourceNames.FIRST)
+            DynamicDataSource.dataSource=DataSourceNames.FIRST
             logger.debug("set datasource is " + DataSourceNames.FIRST)
         } else {
-            DynamicDataSource.setDataSource(ds.name)
+            DynamicDataSource.dataSource = ds.name
             logger.debug("set datasource is " + ds.name)
         }
 

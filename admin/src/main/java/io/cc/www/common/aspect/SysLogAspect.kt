@@ -73,7 +73,7 @@ class SysLogAspect {
         }
 
         //获取request
-        val request = HttpContextUtils.getHttpServletRequest()
+        val request = HttpContextUtils.httpServletRequest
         //设置IP地址
         sysLog.ip = IPUtils.getIpAddr(request)
 

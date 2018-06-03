@@ -40,7 +40,7 @@ class DataFilterAspect {
     fun dataFilter(point: JoinPoint) {
         val params = point.args[0]
         if (params != null && params is Map<*, *>) {
-            val user = ShiroUtils.getUserEntity()
+            val user = ShiroUtils.userEntity
 
             //如果不是超级管理员，则进行数据过滤
             if (user.userId != (Constant.SUPER_ADMIN).toLong()) {
